@@ -1,0 +1,88 @@
+/* Reset some default styles and set a neutral background color */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+/* Style the header with a dark background, white text, and subtle box shadow */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the navigation bar with a darker background and subtle box shadow */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style navigation links with a clean look */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change link color on hover for a subtle effect */
+nav a:hover {
+    color: #ffd700; /* Change to your desired hover color */
+}
+
+/* Style the hero section with a clean and centered layout, using a subtle gradient background */
+section.hero {
+    text-align: center;
+    padding: 2em;
+    background: linear-gradient(to right, #4c75af, #422e8b); /* Change to your desired gradient or color */
+    color: white;
+}
+
+/* Style the about section with padding and a light background */
+section.about {
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more styles for other sections as needed */
+
+/* Style the footer with a neutral background and subtle box shadow */
+footer {
+    background-color: #f5f5f5;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel on the home page  */
+.carousel {
+    display: flex;
+    overflow: hidden; /* Ensure the container clips the images */
+    transition: transform 0.5s ease-in-out;
+}
+
+.panel {
+    width: 100%; /* Ensure each panel takes the full width of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex: 0 0 100%;
+    /* Other styling properties for each panel */
+}
+
+.panel img {
+    width: 100%; /* Make the image fill the width of its parent container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Add any additional custom styles based on your design preferences */

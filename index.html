@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSecOps Solutions</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+<body>
+    <header>
+        <h1>DevSecOps Solutions</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="carousel">
+        <div class="panel active" id="panel1">
+            <h2>Panel 1</h2>
+            <p>This is the content for panel 1. You can add images, text, links, etc.</p>
+            <img src="images/AnswersFunny.jpg" alt="Where to find answers">
+            <!-- Additional dynamic content for panel 1 -->
+        </div>
+        <div class="panel" id="panel2">
+            <h2>Panel 2</h2>
+            <p>This is the content for panel 2. Customize it as needed.</p>
+            <img src="images/FunnyPicture.jpg" alt="Where to find answers">
+            <!-- Additional dynamic content for panel 2 -->
+        </div>
+    </div> 
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const panels = document.querySelectorAll('.panel');
+        let currentIndex = 0;
+      
+        function showPanel(index) {
+            const newPosition = -index * 100 + '%';
+            carousel.style.transform = 'translateX(' + newPosition + ')';
+        }
+      
+        function nextPanel() {
+            currentIndex = (currentIndex + 1) % panels.length;
+            showPanel(currentIndex);
+        }
+      
+        setInterval(nextPanel, 5000); // Change panel every 5000 milliseconds (5 seconds)
+      </script>
+
+    <a id="link1" href="#">Link 1</a>
+    <a id="link2" href="#">Link 2</a>
+    <!-- ... More links ... -->
+    
+
+    <section class="hero">
+        <h2>Welcome to DevSecOps Solutions</h2>
+        <p>Deliver Value Faster Safer.</p>
+        <!----
+        <a href="#services">Explore Our Services</a> -->
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We are a leading DevSecOps company dedicated to integrating security practices into the software development lifecycle. Our team of experts ensures that your applications are not only efficient but also secure from the ground up.</p>
+    </section>
+
+    <!-- Add more sections for services, testimonials, contact, etc. -->
+
+    <footer>
+        <p>&copy; 2023 DevSecOps Solutions Limited. All rights reserved.</p>
+    </footer>
+</body>
+</html>
