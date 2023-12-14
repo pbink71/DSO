@@ -64,6 +64,14 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust the top positioning as needed */
+    left: 10px; /* Adjust the left positioning as needed */
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio of the logo */
+}
+
 /* Carousel on the home page  */
 .carousel {
     display: flex;
