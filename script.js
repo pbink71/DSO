@@ -28,3 +28,14 @@ $(document).ready(function(){
         dots: true
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var pathName = window.location.pathname;
+    var currentPage = pathName.substring(pathName.lastIndexOf('/') + 1);
+
+    var activeLink = document.getElementById(currentPage + '-link');
+    if (activeLink) {
+        activeLink.classList.add('active');
+    }
+});
