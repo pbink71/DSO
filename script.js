@@ -1,20 +1,30 @@
-const carousel = document.querySelector('.carousel');
-const panels = document.querySelectorAll('.panel');
-let currentIndex = 0;
+// script.js
+var player; // Declare a global variable to hold the YouTube player instance
 
-function showPanel(index) {
-    const newPosition = -index * 100 + '%';
-    carousel.style.transform = 'translateX(' + newPosition + ')';
-}
-function nextPanel() {
-    currentIndex = (currentIndex + 1) % panels.length;
-    showPanel(currentIndex);
-}
-setInterval(nextPanel, 5000); // Change panel every 5000 milliseconds (5 seconds)
 
-// Example: Change panel when clicking a link
-const link1 = document.getElementById('link1');
-link1.addEventListener('click', function() {
-    currentIndex = 0;
-    showPanel(currentIndex);
+function onYouTubeIframeAPIReady() {
+    // Initialize YouTube videos
+    $('.youtube-video').each(function () {
+        var youtubeId = $(this).data('youtube-id');
+        player = new YT.Player(this, {
+            videoId: youtubeId,
+            playerVars: {
+                'autoplay': 0, // 1 for autoplay
+                'rel': 0, // 0 to hide related videos
+                'showinfo': 0 // 0 to hide the video title and uploader info
+            }
+        });
+    });
+}
+
+$(document).ready(function(){
+    // Initialize Videos Carousel
+    $('.videos-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000, // Set the autoplay speed in milliseconds
+        arrows: true,
+        dots: true
+    });
 });

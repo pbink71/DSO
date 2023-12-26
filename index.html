@@ -4,49 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevSecOps Solutions</title>
-    <!-- Link to your JavaScript file -->
+
+
+   <!-- External Stylesheets -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+   
+   <!-- Your Custom Stylesheet -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
+   <!-- YouTube Embed API -->
+   <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- My script file -->
     <script src="script.js"></script>
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
+
 </head>
+
 <body>
     <header>
-        <img src="images/DSO2Logo.png" alt="DevSecOps" class="logo">
-        <h1>DevSecOps Solutions</h1>
+        <img src="images/LogoDSOText.png" alt="DevSecOps" class="logo">
+        <!-- <h1>DevSecOps Solutions</h1> -->
     </header>
 
     <nav>
-        <a href="#home">Home</a>
+        <a href="#what">What we do</a>
         <a href="#services">Services</a>
-        <a href="#about">About Us</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <a href="#reference">Reference Material</a>
     </nav>
 
-    <div class="carousel">
-        <div class="panel active" id="panel1">
-         <!--   <h2>Panel 1</h2> -->
-         <!--   <p>This is the content for panel 1. You can add images, text, links, etc.</p> -->
-            <img src="images/AnswersFunny.jpg" alt="Where to find answers">
-            <!-- Additional dynamic content for panel 1 -->
+ 
+<!-- Videos Carousel Section -->
+<section id="videos" class="videos">
+    <div class="videos-carousel">
+        <!-- Video 1 -->
+        <div class="video-item">
+            <div class="youtube-video" data-youtube-id="rPT3RvYfhmk"></div>
         </div>
-        <div class="panel" id="panel2">
-         <!--   <h2>Panel 2</h2> -->
-         <!--   <p>This is the content for panel 2. Customize it as needed.</p> -->
-            <img src="images/FunnyPicture.jpg" alt="Run again">
-            <!-- Additional dynamic content for panel 2 -->
+        <!-- Video 2 -->
+        <div class="video-item">
+            <div class="youtube-video" data-youtube-id="39Qf4_8aChg"></div>
         </div>
-    </div> 
-
-
-    <a id="link1" href="#">Link 1</a>
-    <a id="link2" href="#">Link 2</a>
-    <!-- ... More links ... -->
-    
+        <!-- Add more video items as needed -->
+    </div>
+</section>
+ 
 
     <section class="hero">
-        <h2>Welcome to DevSecOps Solutions</h2>
-        <p>Deliver Value Faster Safer.</p>
+        <h2>DevSecOps Solutions: Deliver Value Faster Safer</h2>
+        
+        <p>DevOps, a portmanteau of Development and Operations, is a cultural and collaborative approach to software development and IT operations. 
+            It emphasizes the breaking down of silos between development, operations, and other related teams to create a streamlined and efficient workflow. The key principles of DevOps include automation, continuous integration, continuous delivery, and continuous monitoring. Automation plays a crucial role in the DevOps process, enabling the rapid and reliable deployment of software. Continuous integration involves frequently merging code changes into a shared repository, allowing teams to detect and address integration issues early. Continuous delivery ensures that code changes can be automatically and reliably delivered to production. Continuous monitoring involves the constant observation of applications and infrastructure to identify and address issues promptly. DevOps aims to improve collaboration, shorten development cycles, and enhance the overall stability and resilience of software systems, 
+            fostering a culture of agility and innovation within organizations.</p>
         <!----
         <a href="#services">Explore Our Services</a> -->
     </section>

@@ -9,8 +9,8 @@ body {
 
 /* Style the header with a dark background, white text, and subtle box shadow */
 header {
-    background-color: #374375;
-    color: white;
+    background-color: white;
+    color: rgb(1, 4, 49);
     padding: 1em;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -20,14 +20,14 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #444;
+    background-color: white;
     padding: 0.5em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Style navigation links with a clean look */
 nav a {
-    color: white;
+    color: rgb(4, 1, 43);
     text-decoration: none;
     padding: 1em;
     margin: 0 1em;
@@ -43,8 +43,9 @@ nav a:hover {
 section.hero {
     text-align: center;
     padding: 2em;
-    background: linear-gradient(to right, #4c75af, #422e8b); /* Change to your desired gradient or color */
-    color: white;
+    background: linear-gradient(to right, white, white); /* Change to your desired gradient or color */
+    color: rgb(1, 4, 49);
+    font-size: 24px; /* Adjust the value as needed */
 }
 
 /* Style the about section with padding and a light background */
@@ -68,7 +69,7 @@ footer {
     position: absolute;
     top: 1px; /* Adjust the top positioning as needed */
     left: 10px; /* Adjust the left positioning as needed */
-    width: 150px; /* Set the width of the logo */
+    width: 250px; /* Set the width of the logo */
     height: auto; /* Maintain the aspect ratio of the logo */
 }
 
