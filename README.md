@@ -1,1 +1,1 @@
-This is a website for DevSecOps solutions
+This is a website for DevSecOps Solutions
