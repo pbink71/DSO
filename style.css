@@ -50,10 +50,6 @@ section.hero {
 
 /* Style the about section with padding and a light background */
 section.about {
- /*   padding: 2em;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-*/
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -122,6 +118,49 @@ footer {
 .service-item p {
     color: #666;
 }
+
+.service-item-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set the color to your preferred link color */
+    cursor: pointer; /* Change cursor on hover for better indication */
+}
+
+/* Detailed services pages */
+
+.services-coaching-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.image-col {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text-col {
+    flex: 2;
+}
+/*
+h1, h2 {
+    color: #004080;
+}
+*/
+
+services-coaching-section {
+    margin-bottom: 20px;
+}
+
+services-coaching-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 
 .icon {
     position: centre;
