@@ -121,7 +121,7 @@ footer {
 
 .service-item-link {
     text-decoration: none; /* Remove underline */
-    color: #333; /* Set the color to your preferred link color */
+    color: #333333; /* Set the color to your preferred link color */
     cursor: pointer; /* Change cursor on hover for better indication */
 }
 
@@ -137,10 +137,32 @@ footer {
     border-radius: 8px;
 }
 
+.services-assessment-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 .image-col {
     flex: 1;
     margin-right: 20px;
 }
+
+.image-col2 {
+    flex: 1;
+    width: 40px;
+    margin-right: 20px;
+}
+
+.image-col2 img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .text-col {
     flex: 2;
