@@ -94,11 +94,11 @@ footer {
     height: auto; /* Maintain the image's aspect ratio */
 }
 
-/* Services Section */
+/* Services page */
 .services {
-    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
 .service-item {
@@ -157,7 +157,6 @@ footer {
     max-width: 100%;
     height: auto;
 }
-
 
 .text-col {
     flex: 2;
