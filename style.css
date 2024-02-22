@@ -41,11 +41,12 @@ nav a:hover {
 
 /* Style the hero section with a clean and centered layout, using a subtle gradient background */
 section.hero {
-    text-align: center;
     padding: 2em;
+    display: grid;
+    text-align: center;
     background: linear-gradient(to right, white, white);
     color: rgb(1, 4, 49);
-    font-size: 24px;
+    font-size: 18px;
 }
 
 /* Style the about section with padding and a light background */
@@ -160,6 +161,7 @@ footer {
 
 .text-col {
     flex: 2;
+    display: flex;
 }
 services-coaching-section {
     margin-bottom: 20px;
