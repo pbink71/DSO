@@ -170,10 +170,10 @@ footer {
     flex: 2;
     display: flex;
 }
-services-coaching-section {
+.services-coaching-section {
     margin-bottom: 20px;
 }
-services-coaching-img {
+.services-coaching-img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -218,3 +218,39 @@ nav ul li a.active {
 .reference-item p {
     color: #666;
 }
+/* contact page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
