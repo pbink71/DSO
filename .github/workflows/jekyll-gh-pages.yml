@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Build and Deploy Jekyll site as docker image
 
 on:
   # Runs on pushes targeting the default branch
@@ -35,6 +35,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Build Docker Image
+        run: 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
