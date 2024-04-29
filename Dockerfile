@@ -8,7 +8,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 # Copy the static website files from the repository into the container
-COPY . .
+COPY _site/. .
 
 # Expose port 80 to allow outside access to your website
 EXPOSE 80
