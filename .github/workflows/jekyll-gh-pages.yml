@@ -36,9 +36,19 @@ jobs:
           source: ./
           destination: ./_site
       - name: Build Docker Image
-        run: 
+        run: |
+          docker build -t pbink71/jekyll-site:${{ github.sha }} .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+      - name: Save Docker Image
+        run: |
+          docker save pbink71/jekyll-site:${{ github.sha }} | gzip > jekyll-site.tar.gz
+      - name: Upload Docker Image as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: jekyll-site
+          path: jekyll-site.tar.gz
+
 
   # Deployment job
   deploy:

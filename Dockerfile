@@ -1,5 +1,5 @@
 # Use a lightweight base image
-FROM nginx:alpine
+FROM docker.io/nginx:alpine
 
 # Set the working directory in the container
 WORKDIR /usr/share/nginx/html
